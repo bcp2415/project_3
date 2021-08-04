@@ -1,0 +1,10 @@
+html {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    border: goldenrod;
+    border: 3px dotted;
+    padding: 10px;
+}

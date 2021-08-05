@@ -1,4 +1,7 @@
+console.log('Testing...')
+
 // Declare some variables:
+var dummy;
 
 // fcn to accept input for a note:
 

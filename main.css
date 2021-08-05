@@ -9,6 +9,15 @@ h1 {
     padding: 10px;
 }
 
-#note {}
+textarea {
+    padding: 10px;
+    margin: 20px;
+    margin: auto;
+}
 
-#addBtn {}
+#note1 {}
+
+#addBtn {
+    padding: 2px;
+    margin: 4px;
+}

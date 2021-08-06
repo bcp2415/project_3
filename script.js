@@ -1,6 +1,7 @@
 // Declare some variables:
 var note1 = document.querySelector('#note1');
 var addBtn = document.querySelector('#addBtn');
+var collection = document.querySelector('#collection');
 
 // fcn to accept input for a note:
 addBtn.addEventListener('click', function() {
@@ -9,16 +10,16 @@ addBtn.addEventListener('click', function() {
     var txt = note1.value;
 
     // Store in memory
-    var nextNote = 1;
-    nextNote++;
-    var currentNote = `note${nextNote}`;
+    var nextNoteNumber = 0;
+    nextNoteNumber++;
+    var currentNote = `note${nextNoteNumber}`;
     localStorage.setItem(currentNote, txt);
 
     // Test storage function:
     console.log(localStorage.getItem(currentNote));
 
     // Display note on screen 
-
+    collection.append(document.createElement("h3")).append(`Note ${nextNoteNumber}`);
 });
 
 // fcn to delete a note

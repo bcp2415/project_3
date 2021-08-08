@@ -20,7 +20,7 @@ addBtn.addEventListener("click", function() {
     // Display note on screen
     collection.insertAdjacentHTML(
         "beforeend",
-        `<div class="storedNote"><p id="${currentNote}">Note ${nextNoteNumber}</p><p>${localStorage.getItem(
+        `<div class="storedNote"><p id="${currentNote}">Note ${nextNoteNumber}:${localStorage.getItem(
       currentNote
     )}</p></div>`
     );

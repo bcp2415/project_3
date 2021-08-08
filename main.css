@@ -7,6 +7,7 @@ h1 {
     border: goldenrod;
     border: 3px dotted;
     padding: 10px;
+    border-radius: 15%;
 }
 
 textarea {
@@ -24,23 +25,19 @@ textarea {
     justify-content: center;
 }
 
-#note1 {}
-
 #addBtn {
     padding: 2px;
     margin: 8px;
 }
 
-.collection {
+#collection {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    flex
 }
 
 .storedNote {
-    text-align: center;
     font-family: sans-serif;
     border: black 5px groove;
+    border-radius: 30px;
+    height: 75px;
+    width: 200px;
 }

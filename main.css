@@ -25,9 +25,11 @@ textarea {
     justify-content: center;
 }
 
-#addBtn {
+#addBtn,
+.btn {
     padding: 2px;
     margin: 8px;
+    align-items: center;
 }
 
 #collection {
@@ -37,7 +39,11 @@ textarea {
 }
 
 .storedNote {
+    background-color: burlywood;
     font-family: sans-serif;
     border: black 5px groove;
     border-radius: 30px;
+    height: 100px;
+    width: 200px;
+    text-overflow: ellipsis;
 }

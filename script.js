@@ -19,7 +19,7 @@ addBtn.addEventListener('click', function() {
     console.log(localStorage.getItem(currentNote));
 
     // Display note on screen 
-    collection.insertAdjacentHTML('beforeend', `<h3 id="${currentNote}">Note ${nextNoteNumber}</h3><p>${localStorage.getItem(currentNote)}</p>`);
+    collection.insertAdjacentHTML('beforeend', `<div class="storedNote"><h3 id="${currentNote}">Note ${nextNoteNumber}</h3><p>${localStorage.getItem(currentNote)}</p></div>`);
 });
 
 // fcn to delete a note

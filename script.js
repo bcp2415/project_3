@@ -1,5 +1,5 @@
 // Declare some variables:
-var note1 = document.querySelector('#note1');
+var noteEntryArea = document.querySelector('#noteEntryArea');
 var addBtn = document.querySelector('#addBtn');
 var collection = document.querySelector('#collection');
 var nextNoteNumber = 0;
@@ -8,7 +8,7 @@ var nextNoteNumber = 0;
 addBtn.addEventListener('click', function() {
 
     // Read entry from textarea element:
-    var txt = note1.value;
+    var txt = noteEntryArea.value;
 
     // Store in memory
     nextNoteNumber++;

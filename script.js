@@ -21,6 +21,12 @@ addBtn.addEventListener("click", function() {
       currentNote
     )}</p><br><button id="delBtn${nextNoteNumber}">Delete note</button></div>`
     );
+
+    // Add functionality to delete button
+    var delBtn = document.querySelector(`#delBtn${nextNoteNumber}`);
+    delBtn.addEventListener("click", function() {
+        delBtn.parentElement.remove();
+    });
 });
 
 // fcn to delete a note

@@ -32,12 +32,12 @@ textarea {
 
 #collection {
     display: flex;
+    flex-flow: row wrap;
+    flex: 1;
 }
 
 .storedNote {
     font-family: sans-serif;
     border: black 5px groove;
     border-radius: 30px;
-    height: 75px;
-    width: 200px;
 }

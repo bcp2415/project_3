@@ -14,15 +14,12 @@ addBtn.addEventListener("click", function() {
     var currentNote = `note${nextNoteNumber}`;
     localStorage.setItem(currentNote, txt);
 
-    // Test storage function:
-    console.log(localStorage.getItem(currentNote));
-
     // Display note on screen
     collection.insertAdjacentHTML(
         "beforeend",
         `<div class="storedNote"><p id="${currentNote}">Note ${nextNoteNumber}:${localStorage.getItem(
       currentNote
-    )}</p></div>`
+    )}</p><br><button id="delBtn${nextNoteNumber}">Delete note</button></div>`
     );
 });
 

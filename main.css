@@ -31,9 +31,16 @@ textarea {
     margin: 8px;
 }
 
+.collection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    flex
+}
+
 .storedNote {
-    border: blue;
-    border-radius: 0em;
-    border-style: groove;
-    border: 3px;
+    text-align: center;
+    font-family: sans-serif;
+    border: black 5px groove;
 }

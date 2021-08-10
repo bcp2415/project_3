@@ -36,7 +36,7 @@ textarea {
     display: flex;
     flex-flow: row wrap;
     flex: 1;
-    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .storedNote {

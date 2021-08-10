@@ -40,13 +40,15 @@ textarea {
 }
 
 .storedNote {
+    display: flex;
+    flex-flow: column;
     background-color: burlywood;
     font-family: sans-serif;
     border: black 5px solid;
+    padding: 5px;
+    margin: 5px;
     border-radius: 30px;
     max-width: 200px;
     max-height: 100px;
-    height: fit-content;
-    width: fit-content;
     text-overflow: ellipsis;
 }

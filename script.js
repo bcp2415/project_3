@@ -17,9 +17,11 @@ addBtn.addEventListener("click", function() {
     // Display note on screen
     collection.insertAdjacentHTML(
         "beforeend",
-        `<div class="storedNote"><p id="${currentNote}">Note ${nextNoteNumber}:<br>${localStorage.getItem(
-      currentNote
-    )}</p><br><button class="btn" id="delBtn${nextNoteNumber}">Delete note</button></div>`
+        `<div class="storedNote">
+          <p id="${currentNote}">Note ${nextNoteNumber}:</p>
+          <p>${localStorage.getItem(currentNote)}</p>
+          <button class="btn" id="delBtn${nextNoteNumber}">Delete note</button>
+        </div>`
     );
 
     // Add functionality to delete button

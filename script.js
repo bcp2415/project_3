@@ -28,6 +28,7 @@ addBtn.addEventListener("click", function() {
     var delBtn = document.querySelector(`#delBtn${nextNoteNumber}`);
     delBtn.addEventListener("click", function() {
         delBtn.parentElement.remove();
+        localStorage.removeItem(currentNote);
     });
 
     // Clear textarea after adding note:

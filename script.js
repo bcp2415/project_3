@@ -17,7 +17,7 @@ addBtn.addEventListener("click", function() {
     // Display note on screen
     collection.insertAdjacentHTML(
         "beforeend",
-        `<div class="storedNote">
+        `<div class="storedNote" id="noteDisplay${nextNoteNumber}">
           <p id="${currentNote}">Note ${nextNoteNumber}:</p>
           <p class="noteText">${localStorage.getItem(currentNote)}</p>
           <button class="btn" id="delBtn${nextNoteNumber}">Delete note</button>
@@ -37,4 +37,8 @@ addBtn.addEventListener("click", function() {
     noteEntryArea.focus();
 
     // fcn to show full contents of a note in a popup window on hover
+    var noteDisplay = document.querySelector(`#noteDisplay${nextNoteNumber}`);
+    noteDisplay.addEventListener("mouseover", function() {
+        window.alert(localStorage.getItem(currentNote));
+    });
 });

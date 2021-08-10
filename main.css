@@ -41,14 +41,20 @@ textarea {
 
 .storedNote {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: scroll;
     background-color: burlywood;
     font-family: sans-serif;
     border: black 5px solid;
     padding: 5px;
     margin: 5px;
     border-radius: 30px;
-    max-width: 200px;
-    max-height: 100px;
+    width: 200px;
+    height: 150px;
+}
+
+.noteText {
     text-overflow: ellipsis;
 }

@@ -19,7 +19,7 @@ addBtn.addEventListener("click", function() {
         "beforeend",
         `<div class="storedNote">
           <p id="${currentNote}">Note ${nextNoteNumber}:</p>
-          <p>${localStorage.getItem(currentNote)}</p>
+          <p class="noteText">${localStorage.getItem(currentNote)}</p>
           <button class="btn" id="delBtn${nextNoteNumber}">Delete note</button>
         </div>`
     );

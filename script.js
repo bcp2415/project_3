@@ -30,5 +30,11 @@ addBtn.addEventListener("click", function() {
         delBtn.parentElement.remove();
     });
 
+    // Clear textarea after adding note:
+    noteEntryArea.value = "";
+
+    // Put focus back in textarea:
+    noteEntryArea.focus();
+
     // fcn to show full contents of a note in a popup window on hover
 });
